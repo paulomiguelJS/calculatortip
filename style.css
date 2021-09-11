@@ -35,6 +35,8 @@ body{
 }
 
 .mainContainer{
+    display: flex;
+
     background: var(--white);
 
     width: 40vw;
@@ -43,4 +45,84 @@ body{
     margin: 0 auto;
 
     border-radius: 1rem;
+}
+
+.numberSide{
+    display: flex;
+    flex-direction: column;
+
+    border: 3px solid red;
+    width: 50%;;
+
+}
+
+
+
+
+.values1{
+    display: flex;
+}
+
+.values2{
+    display: flex;
+}
+
+.numberZero{
+    display: flex;
+}
+
+.bill{
+    border: 1px solid red;
+}
+
+
+.totalSide{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid blue;
+    width: 50%;
+}
+
+.totalSide span{
+    padding: 0 1rem;
+    border: 1px solid greenyellow;
+}
+
+.tipAmount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 1rem;
+    margin-top: 1rem ;
+
+    border: 1px solid green;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 1rem;
+    margin-top: 1rem;
+
+    border: green;
+}
+
+button{
+text-align: center;
+font-weight: 700;
+
+background: var(--Strong-green);
+color: var(--Very-dark);
+
+
+width: 90%;
+padding: 0.3rem;
+
+margin: 4rem auto;
+
+border-radius: .2rem;
+border: none;
 }

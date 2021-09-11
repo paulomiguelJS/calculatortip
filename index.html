@@ -17,9 +17,45 @@
     <header class="logo">
     <img src="assets/tip-calculator-app-main/images/logo.svg" alt="" />
     </header>
-    <main class="mainContainer"></main>
-        <section class="numberSide"></section>
-        <section class="totalSide"></section>
+    <main class="mainContainer">   <section class="numberSide">
+      <div class="bill">
+        <label for="">Bill</label>
+        <input type="number">
+      </div>
+    <h2>Select Tip %</h2>
+    <div class="values1"> <div>5%</div>
+    <div>10%</div>
+    <div>15%</div></div>
+     <div class="values2">
+      <div>25%</div>
+      <div>50%</div>
+      <div>Custom</div>
+     </div>
+     <div class="numberZero">
+       <h2>Number of people</h2>
+       <p>Can't be zero</p>
+     </div>
+     <input type="number">
+
+    </section>
+
+    <section class="totalSide">
+      <div class="tipAmount">
+        <h2>Tip Amount</h2>
+        <p>$0.00</p>
+      </div>
+      <span>/ person</span>
+      <div class="total">
+        <h2>Total</h2>
+        <p>$0,00</p>
+      </div>
+      <span>/ person</span>
+      <button>RESET</button>
+    </section>
+
+  </main>
+     
+       
     <script src="app.js"></script>
   </body>
 </html>
