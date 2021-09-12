@@ -39,8 +39,8 @@ body{
 
     background: var(--white);
 
-    width: 40vw;
-    height: 40vh;
+    width: 50vw;
+    height: 50vh;
 
     margin: 0 auto;
 
@@ -55,9 +55,6 @@ body{
     width: 50%;;
 
 }
-
-
-
 
 .values1{
     display: flex;
@@ -76,42 +73,61 @@ body{
 }
 
 
+
+
+
 .totalSide{
     display: flex;
     flex-direction: column;
-    border: 3px solid blue;
+    justify-content: center;
+    align-items: center;
+
     width: 50%;
+
 }
 
-.totalSide span{
-    padding: 0 1rem;
-    border: 1px solid greenyellow;
+.totalContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    border-radius: 1rem;
+
+    background: var(--Very-dark);
+
+    width: 90%;
+    height: 90%;
+
 }
 
 .tipAmount{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
 
-    padding: 0 1rem;
-    margin-top: 1rem ;
+    border: 1px solid red;
+    
+    color: var(--white);
 
-    border: 1px solid green;
 }
 
-.total{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 0 1rem;
-    margin-top: 1rem;
-
-    border: green;
+.tipAmount p {
+    color: var(--Strong-green);
+    
+    
+    font-size: 2rem;
+    font-weight: 700;
 }
 
-button{
-text-align: center;
+
+
+.totalContainer span {
+    color: var(--bg-body);
+    border: 3px solid gold;
+    font-size: .7rem;
+}
+
+ button{
 font-weight: 700;
 
 background: var(--Strong-green);
@@ -121,7 +137,6 @@ color: var(--Very-dark);
 width: 90%;
 padding: 0.3rem;
 
-margin: 4rem auto;
 
 border-radius: .2rem;
 border: none;
