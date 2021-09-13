@@ -23,7 +23,7 @@ body{
     background: var(--bg-body);
 }
 
-.logo {
+.logo{
     display: flex;
     justify-content: center;
 
@@ -72,10 +72,6 @@ body{
     border: 1px solid red;
 }
 
-
-
-
-
 .totalSide{
     display: flex;
     flex-direction: column;
@@ -83,10 +79,9 @@ body{
     align-items: center;
 
     width: 50%;
-
 }
 
-.totalContainer {
+.totalContainer{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -97,21 +92,29 @@ body{
 
     width: 90%;
     height: 90%;
-
 }
+
+.totalContainer span{
+    color: var(--bg-input);
+    font-size: .7rem;
+}
+
 
 .tipAmount{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
-    border: 1px solid red;
     
     color: var(--white);
 
 }
 
-.tipAmount p {
+.amountValue{
+    display: flex;
+    justify-content: space-around;
+}
+
+.amountValue p{
     color: var(--Strong-green);
     
     
@@ -119,20 +122,13 @@ body{
     font-weight: 700;
 }
 
-
-
-.totalContainer span {
-    color: var(--bg-body);
-    border: 3px solid gold;
-    font-size: .7rem;
-}
-
- button{
+button{
 font-weight: 700;
 
 background: var(--Strong-green);
 color: var(--Very-dark);
 
+cursor: pointer;
 
 width: 90%;
 padding: 0.3rem;
@@ -140,4 +136,7 @@ padding: 0.3rem;
 
 border-radius: .2rem;
 border: none;
+
+margin: 0 auto;
 }
+
