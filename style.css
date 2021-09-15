@@ -52,29 +52,64 @@ body{
     display: flex;
     flex-direction: column;
 
+
     border: 3px solid red;
     width: 50%;;
-
 }
 
+.numberSide h2{
+    font-size: .8rem;
+    font-weight: 300;
+    color: var(--Dark-grayish);
+
+    margin-left: 1rem;
+}
 .values1{
     display: flex;
-    justify-content: space-between;
+    gap: .6rem;
 
-    width: 90%;
+    margin-left: 1rem;
 
-    border: 3px solid gold;
+    font-weight: 700;
+    color: var(--white);
 
 }
 
-.values1 div{
-    border: 2px solid red;
+.values1 span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: .4rem 0 .4rem 0;
+
+    background: var(--Very-dark);
+
     border-radius: .3rem;
-    padding: .2rem 1rem;
 
+    width: 5.5rem;
+    height: 2.2rem;
+
+    cursor: pointer;
 }
 
+.custom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    margin: .4rem 0 .4rem 0;
+
+    border-radius: .3rem;
+
+    width: 5.5rem;
+    height: 2.2rem;
+
+    cursor: pointer;
+
+    color: var(--Dark-grayish);
+    background: var(--white) ; 
+    border: 1px solid var(--Very-dark);
+}
 
 .numberZero{
     display: flex;
@@ -85,12 +120,19 @@ body{
     flex-direction: column;
 
     padding: 1rem;
-    border: 1px solid red;
 }
 
 .bill input{
     text-align: right;
+
     border-radius: .2rem;
+    border: 2px solid var(--Strong-green);
+
+    padding: 0.2rem;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--Very-dark);
 }
 
 .totalSide{
@@ -105,8 +147,8 @@ body{
 .totalContainer{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     
+
     border-radius: 1rem;
 
     background: var(--Very-dark);
@@ -118,6 +160,8 @@ body{
 .totalContainer span{
     color: var(--bg-input);
     font-size: .7rem;
+
+    
 }
 
 
@@ -125,14 +169,17 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
     
     color: var(--white);
-
 }
 
 .amountValue{
     display: flex;
     justify-content: space-around;
+    
+    margin-top: 2rem;
+
 }
 
 .amountValue p{
@@ -158,6 +205,6 @@ padding: 0.3rem;
 border-radius: .2rem;
 border: none;
 
-margin: 0 auto;
+margin: 4rem auto 0 auto;
 }
 
