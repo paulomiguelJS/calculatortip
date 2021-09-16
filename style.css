@@ -51,9 +51,6 @@ body{
 .numberSide{
     display: flex;
     flex-direction: column;
-
-
-    border: 3px solid red;
     width: 50%;;
 }
 
@@ -62,7 +59,7 @@ body{
     font-weight: 300;
     color: var(--Dark-grayish);
 
-    margin-left: 1rem;
+    margin: 1rem 0 0 1rem;
 }
 .values1{
     display: flex;
@@ -104,6 +101,7 @@ body{
     width: 5.5rem;
     height: 2.2rem;
 
+
     cursor: pointer;
 
     color: var(--Dark-grayish);
@@ -113,13 +111,27 @@ body{
 
 .numberZero{
     display: flex;
+
+}
+
+
+
+.numberZero span{
+    margin: .8rem 0 0 2rem;
+    
+    color: rgb(211, 94, 94);
 }
 
 .bill{
     display: flex;
     flex-direction: column;
 
-    padding: 1rem;
+    padding-top: 1rem;
+}
+
+.bill label{
+    padding-left: 1rem;
+    
 }
 
 .bill input{
@@ -128,13 +140,35 @@ body{
     border-radius: .2rem;
     border: 2px solid var(--Strong-green);
 
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--Very-dark);
+    background: #fcf5f5;
+    
+
+}
+
+.numberSide input{
+    
+    text-align: right;
+
+    border-radius: .2rem;
+    border: 2px solid var(--Strong-green);
+
     padding: 0.2rem;
+    margin: .5rem auto 0 auto;
+    
+
+    width: 90%;
 
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--Very-dark);
-}
+    background: #fcf5f5;
 
+
+
+}
 .totalSide{
     display: flex;
     flex-direction: column;
