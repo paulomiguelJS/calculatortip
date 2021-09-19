@@ -1,244 +1,229 @@
-*{
-    padding: 0;
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+}
+
+:root {
+  --Very-dark: #00494d;
+  --Dark-grayish: #5e7a7d;
+  --bg-input: #7f9c9f;
+  --bg-body: #c5e4e7;
+  --Light-grayish: #0b0c0c;
+  --Strong-green: #26c0ab;
+  --white: #fff;
+}
+
+body {
+  background: var(--bg-body);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 6rem auto 4rem auto;
+
+  display: flex;
+  align-items: center;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+
+  background: var(--white);
+
+  width: 50vw;
+  height: 50vh;
+
+  margin: 0 auto;
+
+  border-radius: 1rem;
+}
+
+.numberSide {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.numberSide h2 {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--Dark-grayish);
+
+  margin: 1rem 0 0 1rem;
+}
+.values1 {
+  display: flex;
+  
+  gap: 0.6rem;
+
+  margin-left: 1rem;
+
+  font-weight: 700;
+  color: var(--white);
+}
+
+.values1 span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0.4rem 0 0.4rem 0;
+
+  background: var(--Very-dark);
+
+  border-radius: 0.3rem;
+
+  width: 5.5rem;
+  height: 2.2rem;
+
+  cursor: pointer;
+}
+
+.values1 span:hover{
+    background-color: var(--Strong-green);
+    color: var(--Very-dark);
+}
+#custom {
+  margin: .4rem 1rem 0 0;
+
+  width: 5.5rem;
+  height: 2.2rem;
+
+
+  border: none;
+}
+
+#custom::placeholder{
+    color: var(--Very-dark);
+    text-align: center;
+    opacity: 0.7;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
     margin: 0;
-
-    box-sizing: border-box;
-
-    font-size: 24px;
-    font-family: 'Space Mono', monospace;
 }
 
-:root{
---Very-dark: #00494d;
---Dark-grayish: #5e7a7d;
---bg-input: #7f9c9f;
---bg-body: #c5e4e7;
---Light-grayish: #0b0c0c;
---Strong-green: #26c0ab;
---white: #fff;
+.numberZero {
+  display: flex;
 }
 
-body{
-    
-    background: var(--bg-body);
+.numberZero span {
+  margin: 0.8rem 0 0 2rem;
+
+  color: rgb(211, 94, 94);
 }
 
-.logo{
-    display: flex;
-    justify-content: center;
+.bill {
+  display: flex;
+  flex-direction: column;
 
-    width: 1440px;
-    margin: 8rem auto 4rem auto ;
-
-    display: flex;
-    align-items: center;
+  padding-top: 1rem;
 }
 
-.mainContainer{
-    display: flex;
-    justify-content: center;
-
-    background: var(--white);
-
-    width: 50vw;
-    height: 50vh;
-
-    margin: 0 auto;
-
-    border-radius: 1rem;
+.bill label {
+  padding-left: 1rem;
 }
 
-.numberSide{
-    display: flex;
-    flex-direction: column;
-    width: 50%;;
+.bill input {
+  text-align: right;
+
+  border-radius: 0.2rem;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--Very-dark);
+  background: #fcf5f5;
 }
 
-.numberSide h2{
-    font-size: .8rem;
-    font-weight: 300;
-    color: var(--Dark-grayish);
+.numberSide input {
+  text-align: right;
 
-    margin: 1rem 0 0 1rem;
-}
-.values1{
-    display: flex;
-    gap: .6rem;
+  border-radius: 0.2rem;
+    border: none;
+  padding: 0.2rem;
+  margin: 0.5rem auto 0 auto;
 
-    margin-left: 1rem;
+  width: 90%;
 
-    font-weight: 700;
-    color: var(--white);
-
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--Very-dark);
+  background: #fcf5f5;
 }
 
-.values1 span{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.numberSide input:focus {
+    outline-color: var(--Strong-green);
+}
+.totalSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    margin: .4rem 0 .4rem 0;
-
-    background: var(--Very-dark);
-
-    border-radius: .3rem;
-
-    width: 5.5rem;
-    height: 2.2rem;
-
-    cursor: pointer;
+  width: 50%;
 }
 
-.custom{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.totalContainer {
+  display: flex;
+  flex-direction: column;
 
-    margin: .4rem 0 .4rem 0;
+  border-radius: 1rem;
 
-    border-radius: .3rem;
+  background: var(--Very-dark);
 
-    width: 5.5rem;
-    height: 2.2rem;
-
-
-    cursor: pointer;
-
-    color: var(--Dark-grayish);
-    background: var(--white) ; 
-    border: 1px solid var(--Very-dark);
+  width: 90%;
+  height: 90%;
 }
 
-.numberZero{
-    display: flex;
-
+.totalContainer span {
+  color: var(--bg-input);
+  font-size: 0.7rem;
 }
 
+.tipAmount {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 
-
-.numberZero span{
-    margin: .8rem 0 0 2rem;
-    
-    color: rgb(211, 94, 94);
+  color: var(--white);
 }
 
-.bill{
-    display: flex;
-    flex-direction: column;
+.amountValue {
+  display: flex;
+  justify-content: space-around;
 
-    padding-top: 1rem;
+  margin-top: 2rem;
 }
 
-.bill label{
-    padding-left: 1rem;
-    
+.amountValue p {
+  color: var(--Strong-green);
+
+  font-size: 2rem;
+  font-weight: 700;
 }
 
-.bill input{
-    text-align: right;
+button {
+  font-weight: 700;
 
-    border-radius: .2rem;
-    border: 2px solid var(--Strong-green);
+  background: var(--Strong-green);
+  color: var(--Very-dark);
 
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--Very-dark);
-    background: #fcf5f5;
-    
+  cursor: pointer;
 
+  width: 90%;
+  padding: 0.3rem;
+
+  border-radius: 0.2rem;
+  border: none;
+
+  margin: 5rem auto 0 auto;
 }
-
-.numberSide input{
-    
-    text-align: right;
-
-    border-radius: .2rem;
-    border: 2px solid var(--Strong-green);
-
-    padding: 0.2rem;
-    margin: .5rem auto 0 auto;
-    
-
-    width: 90%;
-
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--Very-dark);
-    background: #fcf5f5;
-
-
-
-}
-.totalSide{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width: 50%;
-}
-
-.totalContainer{
-    display: flex;
-    flex-direction: column;
-    
-
-    border-radius: 1rem;
-
-    background: var(--Very-dark);
-
-    width: 90%;
-    height: 90%;
-}
-
-.totalContainer span{
-    color: var(--bg-input);
-    font-size: .7rem;
-
-    
-}
-
-
-.tipAmount{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-    
-    color: var(--white);
-}
-
-.amountValue{
-    display: flex;
-    justify-content: space-around;
-    
-    margin-top: 2rem;
-
-}
-
-.amountValue p{
-    color: var(--Strong-green);
-    
-    
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-button{
-font-weight: 700;
-
-background: var(--Strong-green);
-color: var(--Very-dark);
-
-cursor: pointer;
-
-width: 90%;
-padding: 0.3rem;
-
-
-border-radius: .2rem;
-border: none;
-
-margin: 4rem auto 0 auto;
-}
-
