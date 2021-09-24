@@ -58,7 +58,7 @@ body {
 
   margin: 1rem 0 0 1rem;
 }
-.values1 {
+.values {
   display: flex;
   
   gap: 0.6rem;
@@ -69,7 +69,7 @@ body {
   color: var(--white);
 }
 
-.values1 span {
+.values span {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,7 +86,7 @@ body {
   cursor: pointer;
 }
 
-.values1 span:hover{
+.values span:hover{
     background-color: var(--Strong-green);
     color: var(--Very-dark);
 }

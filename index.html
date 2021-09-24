@@ -21,48 +21,42 @@
       <section class="numberSide">
         <div class="bill">
           <label for="">Bill</label>
-          <input type="number" placeholder="0.00" />
+          <input id="billTotal" type="number" placeholder="0.00" />
         </div>
         <h2>Select Tip %</h2>
-        <div class="values1">
-          <span>5%</span>
-          <span>10%</span>
-          <span>15%</span>
+        <div class="values">
+          <span class="btn tip" id="teste">5%</span>
+          <span class="btn tip">10%</span>
+          <span class="btn tip">15%</span>
         </div>
-        <div class="values1">
-          <span>25%</span>
-          <span>50%</span>
-          <input  type ="number" placeholder="Custom" id="custom">
+        <div class="values">
+          <span class="btn tip">25%</span>
+          <span class="btn tip">50%</span>
+          <input type="number" placeholder="Custom" id="custom" />
         </div>
         <div class="numberZero">
           <h2>Number of people</h2>
           <span>Can't be zero</span>
         </div>
-          <input type="number" placeholder="0"  />
+        <input id="totalPeople" type="number" placeholder="0" />
       </section>
-
-
-
-
-
       <section class="totalSide">
         <div class="totalContainer">
+          <div class="amountValue">
+            <div class="tipAmount">
+              <h2>Tip Amount</h2>
+              <span>/ person</span>
+            </div>
+            <p>0.00</p>
+          </div>
 
           <div class="amountValue">
-          <div class="tipAmount">
-            <h2>Tip Amount</h2>
-            <span>/ person</span>
+            <div class="tipAmount">
+              <h2>Tip Amount</h2>
+              <span>/ person</span>
+            </div>
+            <p>0.00</p>
           </div>
-          <p>0.00</p>
-        </div>
-
-        <div class="amountValue">
-          <div class="tipAmount">
-            <h2>Tip Amount</h2>
-            <span>/ person</span>
-          </div>
-          <p>0.00</p>
-        </div>
           <button>RESET</button>
         </div>
       </section>
