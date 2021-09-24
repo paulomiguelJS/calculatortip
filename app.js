@@ -1,12 +1,25 @@
 const bill = document.getElementById('billTotal');
 const tipBtns = document.querySelectorAll('.tip')
+const customTip = document.getElementById('custom')
 
 bill.addEventListener('input', setBillValue);
+tipBtns.forEach(btn => {
+    btn.addEventListener('click', handleClick)
+})
 
-billValue = 0.00; //default value
+customTip.addEventListener('input', setTipCustom)
+
+let billValue = 0.00; //default value
+let tipValue = 0.15;
+
 
 function validateNumber(s) {
-    var rgx= /^[0-9]*\.?[0-9]*$/;
+    let rgx= /^[0-9]*\.?[0-9]*$/;
+    return s.match(rgx)
+}
+
+function validateInt(s){
+    let rgx = /^[0-9]9/
     return s.match(rgx)
 }
 
@@ -16,9 +29,26 @@ function setBillValue() {
     }
 
    
-    billValue = parseFloat(bill.value).toFixed(2)
+    billValue = parseFloat(bill.value).toFixed(2);
     console.log(billValue)
 }
 
+function handleClick(event){
+    tipBtns.forEach(btn =>{
+        btn.classList.remove('btnActive')
 
-console.log(tipBtns[0])
+        if(event.target.innerHTML == btn.innerHTML){
+            btn.classList.add('btnActive')
+            tipValue = parseFloat(btn.innerHTML)/100
+        }
+    })
+}
+
+function setTipCustom(){
+    if(!validateInt(customTip.value)){
+        customTip.value = customTip.value.substring(0, customTip.value,length-1)
+    }
+    tipValue = parseFloat(customTip.value/100)
+
+    console.log(tipValue)
+}
