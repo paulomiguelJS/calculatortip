@@ -116,10 +116,17 @@ input::-webkit-inner-spin-button {
   display: flex;
 }
 
-.numberZero span {
+.error {
   margin: 0.8rem 0 0 2rem;
 
   color: rgb(211, 94, 94);
+
+  opacity: 0;
+}
+
+.showError {
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
 }
 
 .bill {
@@ -227,3 +234,5 @@ button {
 
   margin: 5rem auto 0 auto;
 }
+
+
