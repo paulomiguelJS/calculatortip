@@ -25,20 +25,17 @@ body {
 .logo {
   display: flex;
   justify-content: center;
-  margin: 6rem auto 4rem auto;
-
-  display: flex;
   align-items: center;
+
+  margin: 6rem auto 4rem auto;
 }
 
 .mainContainer {
   display: flex;
-  justify-content: center;
-
   background: var(--white);
 
   width: 50vw;
-  height: 50vh;
+  height: 55vh;
 
   margin: 0 auto;
 
@@ -48,15 +45,18 @@ body {
 .numberSide {
   display: flex;
   flex-direction: column;
+  
   width: 50%;
 }
 
-.numberSide h2 {
+.tipH2 {
   font-size: 0.8rem;
   font-weight: 300;
   color: var(--Dark-grayish);
 
-  margin: 1rem 0 0 1rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  
 }
 .values {
   display: flex;
@@ -114,11 +114,21 @@ input::-webkit-inner-spin-button {
 
 .numberZero {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.peopleNumber{
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--Dark-grayish);
 }
 
 .error {
-  margin: 0.8rem 0 0 2rem;
-
+  font-size: .8rem;
   color: rgb(211, 94, 94);
 
   opacity: 0;
@@ -127,6 +137,10 @@ input::-webkit-inner-spin-button {
 .showError {
   transition: opacity 1s ease-in-out;
   opacity: 1;
+}
+
+#totalPeople{
+  margin-top: 1rem;
 }
 
 .bill {
@@ -155,7 +169,7 @@ input::-webkit-inner-spin-button {
   text-align: right;
 
   border-radius: 0.2rem;
-    border: none;
+  border: none;
   padding: 0.2rem;
   margin: 0.5rem auto 0 auto;
 
@@ -188,7 +202,7 @@ input::-webkit-inner-spin-button {
   background: var(--Very-dark);
 
   width: 90%;
-  height: 90%;
+  padding: 1rem;
 }
 
 .totalContainer span {
@@ -232,7 +246,33 @@ button {
   border-radius: 0.2rem;
   border: none;
 
-  margin: 5rem auto 0 auto;
 }
 
+.reset{
+  margin-left: 1rem;
+  margin-top: 4rem;
+}
 
+@media (max-width: 1000px) {
+ 
+  .mainContainer{
+    height: 100vh;
+    width: 80vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .numberSide{
+  
+        width: 100%;
+    flex-direction: column;
+  }
+
+  .totalContainer{
+    border: 1px solid red;
+    width: 340px;
+  }
+  
+}

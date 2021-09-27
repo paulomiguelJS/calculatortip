@@ -23,22 +23,22 @@
           <label for="">Bill</label>
           <input id="billTotal" type="number" placeholder="0.00" />
         </div>
-        <h2>Select Tip %</h2>
+        <h2 class="tipH2">Select Tip %</h2>
         <div class="values">
           <button class="btn tip" id="teste">5%</button>
           <button class="btn tip">10%</button>
-          <button class="btn tip">15%</button>
+          <button class="btn tip btnActive">15%</button>
         </div>
         <div class="values">
-          <button class="btn tip btnActive">25%</button>
+          <button class="btn tip ">25%</button>
           <button class="btn tip">50%</button>
           <input type="number" placeholder="Custom" id="custom" />
         </div>
         <div class="numberZero">
-          <h2>Number of people</h2>
+          <h2 class="peopleNumber">Number of people</h2>
           <span class="error">Can't be zero</span>
         </div>
-        <input id="totalPeople" type="number" placeholder="0" />
+        <input class="totalPeople" id="totalPeople" type="number" value="1" />
       </section>
       <section class="totalSide">
         <div class="totalContainer">
@@ -47,17 +47,16 @@
               <h2>Tip Amount</h2>
               <span>/ person</span>
             </div>
-            <p>0.00</p>
+            <p class="value">0.00</p>
           </div>
-
           <div class="amountValue">
             <div class="tipAmount">
-              <h2>Tip Amount</h2>
+              <h2>Total</h2>
               <span>/ person</span>
             </div>
-            <p>0.00</p>
+            <p class="value">0.00</p>
           </div>
-          <button>RESET</button>
+          <button class="reset">RESET</button>
         </div>
       </section>
     </main>

@@ -3,7 +3,8 @@ const tipBtns = document.querySelectorAll('.tip')
 const customTip = document.getElementById('custom')
 const people = document.getElementById('totalPeople')
 const errorMsg = document.querySelector('.error')
-const results = document.querySelector
+const results = document.querySelectorAll('.value')
+const resetBtn = document.querySelector('.reset')
 
 bill.addEventListener('input', setBillValue);
 tipBtns.forEach(btn => {
@@ -12,11 +13,11 @@ tipBtns.forEach(btn => {
 
 customTip.addEventListener('input', setTipCustom)
 people.addEventListener('input', setPeople)
+resetBtn.addEventListener('click', reset)
 
 let billValue = 0.00; //default value
 let tipValue = 0.15;
 let peopleValue = 1;
-console.log(peopleValue)
 
 
 function validateNumber(s) {
@@ -36,6 +37,7 @@ function setBillValue() {
 
    
     billValue = parseFloat(bill.value).toFixed(2);
+    calculateTip()
 }
 
 function handleClick(event){
@@ -49,6 +51,8 @@ function handleClick(event){
     })
 
     customTip.value = '';
+
+    calculateTip()
 }
 
 function setTipCustom(){
@@ -60,6 +64,10 @@ function setTipCustom(){
     tipBtns.forEach(btn => {
         btn.classList.remove('btnActive')
     })
+    if(customTip.value !== ''){
+    calculateTip()
+
+    }
 }
 
     function setPeople(){
@@ -75,12 +83,27 @@ function setTipCustom(){
                 errorMsg.classList.remove('showError')
             }, 3000)
         }
-console.log(peopleValue)
+    calculateTip()
+
     }
 
     function calculateTip(){
         if(peopleValue >=1) {
             let tipAmount = billValue * tipValue / peopleValue
             let total = billValue * (tipValue + 1) / peopleValue
+            results[0].innerHTML = '$' + tipAmount.toFixed(2)
+            results[1].innerHTML = '$' + total.toFixed(2)
+            console.log(tipAmount)
+            console.log(total)
+
         }
+    }
+
+    function reset(){
+        bill.value = '0.0'
+        setBillValue()
+
+        tipBtns[2].click()
+        peopleValue = '1'
+        setPeopleValue();
     }
