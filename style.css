@@ -253,26 +253,37 @@ button {
   margin-top: 4rem;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1180px) {
  
   .mainContainer{
-    height: 100vh;
+    height: 1000px;
     width: 80vw;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     padding: 0px;
   }
 
-  .numberSide{
-  
-        width: 100%;
-    flex-direction: column;
+  .values{
+    margin: 0;
   }
 
+  .numberSide{
+        width: 70vw;
+        margin-bottom: 2rem;
+  }
+
+#custom{
+  margin-top: .4rem  ;
+  margin-right: 1rem;
+
+  font-size: .8rem;
+}
+
   .totalContainer{
-    border: 1px solid red;
-    width: 340px;
+    width: 70vw;
   }
   
 }
