@@ -281,9 +281,15 @@ button {
   }
 
   #custom {
+
+    width: 37%;
+
     margin: .4rem 0;
+
     text-align: center;
+
     font-size: .8rem;
+
   }
 
   .totalContainer {
