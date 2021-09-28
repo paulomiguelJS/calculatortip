@@ -283,6 +283,7 @@ button {
   #custom {
     margin: .4rem 0;
     text-align: center;
+    font-size: .8rem;
   }
 
   .totalContainer {
