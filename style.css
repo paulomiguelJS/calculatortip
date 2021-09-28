@@ -59,7 +59,6 @@ body {
 }
 .values {
   display: flex;
-
   gap: 0.6rem;
 
   margin-left: 1rem;
@@ -91,7 +90,7 @@ body {
 #custom {
   margin: 0.4rem 1rem 0 0;
 
-  width: 5.5rem;
+  width: 40%;
   height: 2.2rem;
 
   border: none;
@@ -216,14 +215,17 @@ input::-webkit-inner-spin-button {
 .tipAmount {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+
 
   color: var(--white);
 }
 
 .amountValue {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+
+  padding: 0 .7rem;
 
   margin-top: 2rem;
 }
@@ -255,6 +257,7 @@ button {
 }
 
 @media (max-width: 1180px) {
+ 
   .logo {
     margin: 2rem auto 1.5rem auto;
   }
@@ -275,15 +278,11 @@ button {
 
   .numberSide {
     width: 90vw;
-
-
   }
 
   #custom {
-  width: 29%;    
-  max-width: 135px;
-  background-color: #f2f8fb;
-
+    margin: .4rem 0;
+    text-align: center;
   }
 
   .totalContainer {
