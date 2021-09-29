@@ -5,7 +5,7 @@
   box-sizing: border-box;
 
   font-size: 24px;
-  font-family: "Space Mono", monospace;
+  font-family: 'Space Mono', monospace;
 }
 
 :root {
@@ -27,7 +27,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  margin: 6rem auto 4rem auto;
+  margin: 4rem auto;
 }
 
 .mainContainer {
@@ -35,7 +35,7 @@ body {
   background: var(--white);
 
   width: 50vw;
-  height: 55vh;
+  height: 500px;
 
   margin: 0 auto;
 
@@ -44,6 +44,7 @@ body {
 
 .numberSide {
   display: flex;
+  justify-content: center;
   flex-direction: column;
 
   width: 50%;
@@ -57,6 +58,7 @@ body {
   margin-left: 1rem;
   margin-top: 1rem;
 }
+
 .values {
   display: flex;
   gap: 0.6rem;
@@ -87,13 +89,12 @@ body {
   background-color: var(--Strong-green);
   color: var(--Very-dark);
 }
+
 #custom {
   margin: 0.4rem 1rem 0 0;
 
   width: 29%;
   height: 2.2rem;
-
-  border: none;
 }
 
 #custom::placeholder {
@@ -138,7 +139,6 @@ input::-webkit-inner-spin-button {
 #totalPeople {
   margin-top: 1rem;
   background-color: #f2f8fb;
-
 }
 
 .bill {
@@ -154,7 +154,6 @@ input::-webkit-inner-spin-button {
 
 .bill input {
   text-align: right;
-
   border-radius: 0.2rem;
 
   font-size: 1.2rem;
@@ -162,9 +161,8 @@ input::-webkit-inner-spin-button {
   color: var(--Dark-grayish);
 }
 
-#billTotal{
+#billTotal {
   background-color: #f2f8fb;
-
 }
 
 .numberSide input {
@@ -186,6 +184,7 @@ input::-webkit-inner-spin-button {
 .numberSide input:focus {
   outline-color: var(--Strong-green);
 }
+
 .totalSide {
   display: flex;
   flex-direction: column;
@@ -217,7 +216,6 @@ input::-webkit-inner-spin-button {
   flex-direction: column;
   justify-content: space-between;
 
-
   color: var(--white);
 }
 
@@ -225,7 +223,7 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: space-between;
 
-  padding: 0 .7rem;
+  padding: 0 0.7rem;
 
   margin-top: 2rem;
 }
@@ -257,7 +255,6 @@ button {
 }
 
 @media (max-width: 1180px) {
- 
   .logo {
     margin: 2rem auto 1.5rem auto;
   }
@@ -269,7 +266,6 @@ button {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-
   }
 
   .values {
@@ -281,21 +277,20 @@ button {
   }
 
   #custom {
-
     width: 37%;
+    max-width: 130px;
 
-    margin: .4rem 0;
+    margin: 0.4rem 0;
 
     text-align: center;
 
-    font-size: .8rem;
-
+    font-size: 0.8rem;
   }
 
   .totalContainer {
     width: 90vw;
 
-    margin:0;
+    margin: 0;
     padding: 0;
   }
 
