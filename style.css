@@ -138,7 +138,9 @@ input::-webkit-inner-spin-button {
 
 #totalPeople {
   margin-top: 1rem;
-  background-color: #f2f8fb;
+
+  background: url(assets/images/icon-person.svg) #f2f8fb no-repeat scroll 20px
+    17px;
 }
 
 .bill {
@@ -162,7 +164,8 @@ input::-webkit-inner-spin-button {
 }
 
 #billTotal {
-  background-color: #f2f8fb;
+  background: url(assets/images/icon-dollar.svg) #f2f8fb no-repeat scroll 20px
+    17px;
 }
 
 .numberSide input {
