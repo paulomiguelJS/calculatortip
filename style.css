@@ -138,6 +138,7 @@ input::-webkit-inner-spin-button {
 
 #totalPeople {
   margin-top: 1rem;
+  margin-left: 0.5rem;
 
   background: url(assets/images/icon-person.svg) #f2f8fb no-repeat scroll 20px
     17px;
